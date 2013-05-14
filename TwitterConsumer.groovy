@@ -4,13 +4,13 @@ import static groovyx.net.http.Method.POST
 import static groovyx.net.http.Method.GET
 import static groovyx.net.http.ContentType.JSON
 
-class TwitterConsumer {
+class TwitterAuthenticationApplicationOnly {
 
     def query
     def consumer_key
     def consumer_secret
 
-    def searchAuthentificationApplicationOnly() {
+    def search() {
 		def access_token = getAccessToken()
 		def tweets = []
 
