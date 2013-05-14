@@ -6,11 +6,10 @@ import static groovyx.net.http.ContentType.JSON
 
 class TwitterAuthenticationApplicationOnly {
 
-    def query
     def consumer_key
     def consumer_secret
 
-    def search() {
+    def search(query) {
 		def access_token = getAccessToken()
 		def tweets = []
 
