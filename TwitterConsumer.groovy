@@ -11,11 +11,10 @@ class TwitterConsumer {
     def consumer_secret
 
     def searchAuthentificationApplicationOnly() {
-		def locale = localeForQuery()
 		def access_token = getAccessToken()
 		def tweets = []
 
-		def http = new HTTPBuilder( "https://api.twitter.com/1.1/search/tweets.json?q=${query}&lang=${locale}&count=10" )
+		def http = new HTTPBuilder( "https://api.twitter.com/1.1/search/tweets.json?q=${query}&count=10" )
 		http.request(GET,JSON) { req ->
 
 			headers.'Authorization' = 'Bearer ' + access_token
