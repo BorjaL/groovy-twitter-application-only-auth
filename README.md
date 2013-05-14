@@ -8,9 +8,9 @@ Example
 -----
 
 ```groovy
-  new TwitterConsumer(
+  new TwitterAuthenticationApplicationOnly(
                 query: "BorjaL", 
                 consumer_key: "exampleOfConsumerKey", 
                 consumer_secret: "exampleOfSecretKey"
-                    ).searchAuthentificationApplicationOnly()
+                    ).search()
 ```
